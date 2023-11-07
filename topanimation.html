@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>top</title>
+    <style>
+        .con{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .a{
+            height: 200px;
+            width: 200px;
+            background-color: darkgreen;
+        }
+        .b{
+            height: 0;
+            width: 200px;
+            background-color: darkmagenta;
+            transition: height 2s ;
+        }
+        .c{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(22, 0, 100);
+        }
+        .d{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(100, 0, 12);
+            transition: height 2s;
+        }
+        .e{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(146, 122, 233);
+            
+        }
+        .f{
+            height: 250px;
+            width: 0;
+            background-color: rgb(122, 233, 126);
+            transition: width 2s;
+
+        }
+        .g{
+            height: 300px;
+            width: 300px;
+            background-color: darkviolet;
+
+        }
+        .h{
+            height: 300px;
+            width: 300px;
+            background-color: crimson;
+            transition: width 2s;
+        }
+        .g:hover .h{
+            width: 0%;
+        }
+
+        .e:hover .f{
+            width: 250px;
+        }
+
+
+.a:hover .b{
+    height: 100%;
+}
+.c:hover .d{
+    height: 0%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="con">
+    <div class="a"><div class="b"> </div></div> <br> <br>
+    <div class="c"><div class="d"> </div></div> <br><br>
+    <div class="e"><div class="f"></div></div>
+    <div class="g"><div class="h"></div></div>
+</div>
+
+</body>
+</html>
